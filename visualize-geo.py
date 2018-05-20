@@ -7,7 +7,7 @@ from tqdm import tqdm
 
 
 @click.command()
-@click.option("-o", "--output", default="map.html", help="Output HTML file name")
+@click.option("-o", "--output", default="map.html", help="Output HTML")
 @click.option("-t", "--tile", default="openstreetmap", help="choose map design:\nmapboxbright\ncartodbdark_matter\ncartodbpositron\ncloudmade\nmapbox\nmapboxcontrolroom\n openstreetmap\nstamenterrain\nstamentoner\nstamenwatercolor")
 def main(output, tile):
     japan_map = folium.Map(location=[35, 135], zoom_start=5, tiles=tile)
