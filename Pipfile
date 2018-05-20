@@ -7,6 +7,7 @@ name = "pypi"
 pandas = "*"
 folium = "*"
 click = "*"
+tqdm = "*"
 
 [dev-packages]
 
